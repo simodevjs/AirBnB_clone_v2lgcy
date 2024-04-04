@@ -28,8 +28,16 @@ function install() {
 install nginx #install nginx
 
 sudo mkdir -p /data/web_static/releases/test /data/web_static/shared
-echo "Holberton School" | sudo tee /data/web_static/releases/test/index.html
+sudo tee /data/web_static/releases/test/index.html <<EOF
+<html>
+  <head>
+  </head>
+  <body>
+    Holberton School
+  </body>
+</html>
+EOF
 sudo ln -sf /data/web_static/releases/test/ /data/web_static/current
 sudo chown -hR ubuntu:ubuntu /data/
 sudo sed -i '/^}$/i \    location /hbnb_static/ {\n        alias /data/web_static/current/;\n    }\n' /etc/nginx/sites-available/default
-sudo service nginx start
+sudo service nginx restart
