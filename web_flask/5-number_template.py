@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" 5. Add fifth view func that displays HTML page if n is int """
+""" Adding fifth view func that displays HTML page if n is an integer """
 
 from flask import Flask
 from flask import render_template
