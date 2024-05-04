@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" 1. Script to start a Flask web application with 2 commands """
+""" Starting a Flask web application with 2 commands """
 
 from flask import Flask
 

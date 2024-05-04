@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" 2. Script to start a Flask web application with 3 view functions """
+""" Script Staring a Flask web application with 3 view fcts """
 
 from flask import Flask
 
